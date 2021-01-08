@@ -1,3 +1,4 @@
+import 'package:brew_crew_remake/shared/widget.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatefulWidget {
@@ -10,9 +11,13 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+
+  final _formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.brown[100],
       appBar: AppBar(
         backgroundColor: Colors.brown[400],
         title: Text(
@@ -36,6 +41,42 @@ class _SignUpState extends State<SignUp> {
             ),
           )
         ]
+      ),
+      body: Container(
+        padding: EdgeInsets.fromLTRB(30, 20, 30, 0),
+        child: Form(
+          key: _formKey,
+          child: Column(
+            children: <Widget>[
+              TextFormField(
+                validator: (value) => value.isEmpty ? 'Please enter Email!' : null,
+                decoration: decorationInput.copyWith(hintText: 'Email'),
+                autofocus: true,
+              ),
+              SizedBox(height: 20),
+              TextFormField(
+                validator: (value) => value.length < 6 ? 'Please enter password as least 6+' : null,
+                decoration: decorationInput.copyWith(hintText: 'Password'),
+                autofocus: true,
+              ),
+              SizedBox(height: 20),
+              RaisedButton(
+                color: Colors.pink[400],
+                onPressed: () {
+                  if(!_formKey.currentState.validate()) {
+                    
+                  }
+                },
+                child: Text(
+                  'Register',
+                  style: TextStyle(
+                    color: Colors.white
+                  )
+                ),
+              )
+            ],
+          )
+        )
       ),
     );
   }
