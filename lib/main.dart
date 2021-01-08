@@ -1,3 +1,4 @@
+import 'package:brew_crew_remake/screens/authenticate/authenticate.dart';
 import 'package:brew_crew_remake/screens/home/Home.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      home: Authenticate(),
     );
   }
 }
