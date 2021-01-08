@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1085378972046",
+    "project_id": "brew-crew-remake",
+    "storage_bucket": "brew-crew-remake.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085378972046:android:946407ab2068bb329c3cdf",
+        "android_client_info": {
+          "package_name": "com.example.brew_crew_remake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085378972046-cj89c828cqimbj8dueokjclbjgau3du2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr2zl-m8UnDoLfzexmbA4jUkhRX4_dGF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085378972046-cj89c828cqimbj8dueokjclbjgau3du2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
